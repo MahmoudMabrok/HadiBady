@@ -17,7 +17,8 @@
             android:id="@+id/btnAddTeam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="add" />
+            android:text="add"
+            android:onClick="add"/>
 
         <EditText
             android:id="@+id/edTeamName"
@@ -42,6 +43,8 @@
         android:id="@+id/btnGo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go" />
+        android:text="Go"
+        android:onClick="Go"
+        tools:ignore="OnClick" />
 
 </LinearLayout>
