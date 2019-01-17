@@ -6,40 +6,40 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:orientation="vertical"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    android:padding="22dp"
-    tools:context=".LeagueActivity.LeagueActivity">
+    tools:context=".Hady.HadyActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_16sdp"
+        android:layout_margin="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnAddTeam"
+            android:id="@+id/btnAddHady"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/btn_add_back"
-            android:onClick="add"
+            android:onClick="addPlayer"
             android:text="@string/add" />
 
         <EditText
-            android:id="@+id/edTeamName"
+            android:id="@+id/edHadyName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="@drawable/edit_back"
             android:ems="10"
-            android:hint="@string/team_name"
-            android:inputType="textPersonName" />
+            android:hint="@string/player_name"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvTeams"
+        android:id="@+id/rvHadyList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -48,14 +48,13 @@
     </android.support.v7.widget.RecyclerView>
 
     <Button
-        android:id="@+id/btnGo"
+        android:id="@+id/btnSelectFromHady"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Go"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/_16sdp"
+        android:layout_margin="16dp"
         android:background="@drawable/btn_add_back"
-        android:text="@string/go"
-        tools:ignore="OnClick" />
+        android:onClick="Select"
+        android:text="@string/draw" />
 
 </LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HadiBadi</string>
+    <string name="hadi_option">Hadi Badi</string>
+    <string name="league_option">League</string>
+    <string name="vs">VS</string>
+    <string name="add">add</string>
+    <string name="draw">Draw</string>
+    <string name="player_name">Player name</string>
+    <string name="go">Go</string>
+    <string name="team_name">Team name</string>
+
+    <string name="drawn">Have benn drawn %s</string>
+</resources>

@@ -9,6 +9,7 @@ public class Match {
     private int matchNum;
 
     public Match() {
+        matchNum = 1;
     }
 
     public Match(String firstTeam, String secondTeam) {
