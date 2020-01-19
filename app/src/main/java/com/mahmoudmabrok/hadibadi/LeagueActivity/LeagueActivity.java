@@ -32,10 +32,9 @@ public class LeagueActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_league);
-
         init();
         dataRepo = new DataRepo(getApplicationContext());
-        //  initList();
+     //   initList();
 
     }
 
@@ -96,19 +95,18 @@ public class LeagueActivity extends AppCompatActivity {
         }
     }
 
-    private void showMessage(String s) {
-        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
-    }
-
     public void Go(View view) {
         // dataRepo.setTeams(listPlayer);
-        if (listPlayer.size() > 1) {
+        if (listPlayer.size() > 2) {
             Intent intent = new Intent(LeagueActivity.this, Formation.class);
             startActivity(intent);
         } else {
-            Toast.makeText(this, "Please Insert Teams more than 1 teams ", Toast.LENGTH_SHORT).show();
+            showMessage("Please Insert Teams more than 2 teams ");
         }
     }
 
 
+    private void showMessage(String s) {
+        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
+    }
 }

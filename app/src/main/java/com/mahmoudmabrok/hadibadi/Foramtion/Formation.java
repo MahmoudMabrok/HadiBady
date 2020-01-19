@@ -114,7 +114,7 @@ public class Formation extends AppCompatActivity {
             }
 
             //// TODO: 9/11/2018 last one
-            show(list.get(list.size() - 1).getFirstTeam());
+          //  show(list.get(list.size() - 1).getFirstTeam());
             adapter.setList(list);
             progressDialog.dismiss();
             //    show("$$ " + list.size());
@@ -183,7 +183,7 @@ public class Formation extends AppCompatActivity {
         }
         for (Match match1 : tempToAdd) {
             if (tempToAdd.size() == 1) {
-                show("^^ " + match1.getFirstTeam());
+          //      show("^^ " + match1.getFirstTeam());
             }
             list.add(match1);
             Log.d(TAG, "before size " + ll.size() + "listToAdd: " + match1.getFirstTeam() + " vs " + match1.getMatchNum());

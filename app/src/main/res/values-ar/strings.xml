@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"> حادي بادي </string>
+    <string name="hadi_option">طير واحد من القائمة </string>
+    <string name="league_option">اعمل دوري </string>
+    <string name="vs">يقابل</string>
+    <string name="add">أضف</string>
+    <string name="draw">طرقع واحد </string>
+    <string name="player_name">اسم اللاعب</string>
+    <string name="go">سلا على الدورة </string>
+    <string name="team_name">اسم الفريق</string>
+    <string name="drawn"> %s طرقع  </string>
+</resources>

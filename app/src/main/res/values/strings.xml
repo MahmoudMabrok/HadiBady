@@ -8,6 +8,5 @@
     <string name="player_name">Player name</string>
     <string name="go">Go</string>
     <string name="team_name">Team name</string>
-
-    <string name="drawn">Have benn drawn %s</string>
+    <string name="drawn"> %s  Have been drawn </string>
 </resources>
