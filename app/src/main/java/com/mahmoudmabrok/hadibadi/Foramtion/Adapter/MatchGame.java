@@ -3,16 +3,16 @@ package com.mahmoudmabrok.hadibadi.Foramtion.Adapter;
 /**
  * Created by Mahmoud on 9/11/2018.
  */
-public class Match {
+public class MatchGame {
     private String firstTeam;
     private String secondTeam;
     private int matchNum;
 
-    public Match() {
+    public MatchGame() {
         matchNum = 1;
     }
 
-    public Match(String firstTeam, String secondTeam) {
+    public MatchGame(String firstTeam, String secondTeam) {
         this.firstTeam = firstTeam;
         this.secondTeam = secondTeam;
     }

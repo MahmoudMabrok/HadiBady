@@ -1,6 +1,6 @@
 package com.mahmoudmabrok.hadibadi.Hady.Adapter;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,10 +61,18 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder> {
         holder.text.setText(value);
     }
 
+    public String drawOut(int rnd) {
+        String name = list.remove(rnd);
+        notifyItemRemoved(rnd);
+        notifyItemRangeChanged(rnd,list.size());
+        return name;
+    }
+
     @Override
     public int getItemCount() {
         return list.size();
     }
+
 
     class Holder extends RecyclerView.ViewHolder {
 

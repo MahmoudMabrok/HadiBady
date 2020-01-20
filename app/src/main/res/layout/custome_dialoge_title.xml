@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#4063fd"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    >
 
 
     <TextView
@@ -12,10 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/show_back"
         android:gravity="center"
-        android:padding="16dp"
-        android:text="VV"
+        android:textColor="@color/vsColor"
         android:textSize="28sp" />
 
 </LinearLayout>

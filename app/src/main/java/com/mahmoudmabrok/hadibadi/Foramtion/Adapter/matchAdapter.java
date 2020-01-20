@@ -1,6 +1,6 @@
 package com.mahmoudmabrok.hadibadi.Foramtion.Adapter;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,20 +19,20 @@ public class matchAdapter extends RecyclerView.Adapter<matchAdapter.Holder> {
 
     private static final String TAG = "matchAdapter";
 
-    List<Match> list;
+    List<MatchGame> list;
     List<Integer> indexesOfHeader = new ArrayList<>();
 
     public matchAdapter() {
         list = new ArrayList<>();
     }
 
-    public void setList(List<Match> list) {
+    public void setList(List<MatchGame> list) {
 
         this.list = new ArrayList<>(list);
         notifyDataSetChanged();
     }
 
-    public void addItem(Match item) {
+    public void addItem(MatchGame item) {
         list.add(item);
         notifyItemInserted(list.size() - 1);
         notifyItemRangeChanged(list.size() - 1, 1);
@@ -55,7 +55,7 @@ public class matchAdapter extends RecyclerView.Adapter<matchAdapter.Holder> {
 
     @Override
     public void onBindViewHolder(Holder holder, int position) {
-        Match value = list.get(position);
+        MatchGame value = list.get(position);
         String oldValue;
 
         Log.d(TAG, position + "onBindViewHolder: " + value.getFirstTeam() + "#" + value.getSecondTeam() + "#" + value.getMatchNum());

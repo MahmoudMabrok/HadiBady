@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="addBtnColor">#00ff00</color>
+    <color name="vsColor">#111111</color>
+    <color name="alertText">#DAE0E2</color>
 </resources>

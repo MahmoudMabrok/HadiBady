@@ -1,10 +1,10 @@
 package com.mahmoudmabrok.hadibadi.Hady;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
@@ -63,17 +63,20 @@ public class HadyActivity extends AppCompatActivity {
         }).attachToRecyclerView(recyclerView);
     }
 
+    /**
+     * select one player from list and draw it out
+     * @param view
+     */
     public void Select(View view) {
-        int size = listPlayer.size();
-        if (size > 0) {
-            //  adapter.setList(listPlayer);
-            int randmo = Operation.getRandom(size);
-            String s = listPlayer.get(randmo);
-            String cc = getString(R.string.drawn, s);
-            // showMessage(s);
-            Alert.getDialog(HadyActivity.this, cc).show();
+        int size = adapter.getItemCount();
+        if (size > 1) {
+            int rnd = Operation.getRandom(size);
+            String playerName = adapter.drawOut(rnd);
+            // display nam with dialog
+            Alert.getDialog(HadyActivity.this, playerName).show();
         } else {
-            showMessage("Add Player ");
+       //     showMessage("Add Player,(At least 2) ");
+            edPlayer.setError("Add More Players");
         }
     }
 
@@ -87,10 +90,9 @@ public class HadyActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(s)) {
             listPlayer.add(s);
             adapter.addItem(s);
-            //adapter.setList(listPlayer);
             edPlayer.setText("");
         } else {
-            showMessage("please add Player ");
+            edPlayer.setError("please add player name");
         }
     }
 }
