@@ -1,4 +1,4 @@
-package com.mahmoudmabrok.hadibadi.Hady.Adapter;
+package com.mahmoudmabrok.hadibadi.hady.adapter;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
-import com.mahmoudmabrok.hadibadi.Hady.HadyActivity;
+import com.mahmoudmabrok.hadibadi.hady.HadyActivity;
 import com.mahmoudmabrok.hadibadi.LeagueActivity.LeagueActivity;
 
 public class MainActivity extends AppCompatActivity {

@@ -13,9 +13,8 @@ import android.widget.Toast;
 
 import com.mahmoudmabrok.hadibadi.Datalayer.DataRepo;
 import com.mahmoudmabrok.hadibadi.Foramtion.Formation;
-import com.mahmoudmabrok.hadibadi.Hady.Adapter.CustomAdapter;
+import com.mahmoudmabrok.hadibadi.hady.adapter.CustomAdapter;
 import com.mahmoudmabrok.hadibadi.R;
-import com.mahmoudmabrok.hadibadi.Util.Operation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -84,7 +83,6 @@ public class LeagueActivity extends AppCompatActivity {
     }
 
     public void add(View view) {
-        Operation.hideInputKeyboard(this);
         String s = edPlayer.getText().toString();
         if (!TextUtils.isEmpty(s)) {
             listPlayer.add(s);
