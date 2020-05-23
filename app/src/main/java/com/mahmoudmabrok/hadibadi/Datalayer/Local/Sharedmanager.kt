@@ -17,7 +17,7 @@ class Sharedmanager(context: Context) {
         editor.putStringSet(name, set)
     }
 
-    fun getTeams(name: String): List<String> {
+    fun getTeamList(name: String): List<String> {
         val list = mutableListOf<String>()
         val temasSet = sharedPreferences.getStringSet(name, null)
         temasSet?.let { list.addAll(it.toList()) }

@@ -19,10 +19,10 @@ public class DataRepo {
 
 
     public void setTeams(List<String> teams, String name) {
-        sharedmanager.setTeams(teams);
+        sharedmanager.setTeams(teams, name);
     }
 
     public List<String> getTeamList(String name) {
-        return sharedmanager.getTeamList();
+        return sharedmanager.getTeamList(name);
     }
 }
