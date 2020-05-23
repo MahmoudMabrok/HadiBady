@@ -21,6 +21,7 @@ import java.util.List;
 
 public class LeagueActivity extends AppCompatActivity {
 
+    // I was so newbi
     public static List<String> listPlayer;
     private RecyclerView recyclerView;
     private CustomAdapter adapter;

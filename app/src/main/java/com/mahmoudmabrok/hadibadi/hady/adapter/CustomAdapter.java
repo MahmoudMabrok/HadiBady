@@ -27,11 +27,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder> {
         notifyDataSetChanged();
     }
 
-    public void setSingleITem(String item) {
-        list.clear();
-        list.add(item);
-        notifyDataSetChanged();
-    }
 
     public void addItem(String item) {
         list.add(item);
@@ -49,14 +44,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder> {
     @Override
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
-        Holder holder = new Holder(view);
-        return holder;
+        return new Holder(view);
     }
 
 
     @Override
     public void onBindViewHolder(Holder holder, int position) {
-
         String value = list.get(position);
         holder.text.setText(value);
     }
