@@ -1,12 +1,13 @@
-package com.mahmoudmabrok.hadibadi;
+package com.mahmoudmabrok.hadibadi.features;
 
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
-import com.mahmoudmabrok.hadibadi.hady.HadyActivity;
-import com.mahmoudmabrok.hadibadi.LeagueActivity.LeagueActivity;
+import com.mahmoudmabrok.hadibadi.R;
+import com.mahmoudmabrok.hadibadi.features.hady.HadyActivity;
+import com.mahmoudmabrok.hadibadi.features.LeagueActivity.LeagueActivity;
 
 public class MainActivity extends AppCompatActivity {
 

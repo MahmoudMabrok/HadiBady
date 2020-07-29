@@ -7,7 +7,7 @@ import java.util.*
 /**
  * Created by Mahmoud on 9/11/2018.
  */
-class Sharedmanager(context: Context) {
+class SharedManager(context: Context) {
     private val sharedPreferences: SharedPreferences = context.getSharedPreferences("teams", Context.MODE_PRIVATE)
     private val editor: SharedPreferences.Editor
 

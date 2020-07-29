@@ -1,4 +1,4 @@
-package com.mahmoudmabrok.hadibadi.hady
+package com.mahmoudmabrok.hadibadi.features.hady
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.mahmoudmabrok.hadibadi.hady.adapter.CustomAdapter
+import com.mahmoudmabrok.hadibadi.features.hady.adapter.CustomAdapter
 import com.mahmoudmabrok.hadibadi.R
 import com.mahmoudmabrok.hadibadi.util.Alert
 import com.mahmoudmabrok.hadibadi.util.Operation

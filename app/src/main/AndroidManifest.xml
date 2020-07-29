@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".features.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".hady.HadyActivity"
+            android:name="com.mahmoudmabrok.hadibadi.features.hady.HadyActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".LeagueActivity.LeagueActivity" />
-        <activity android:name=".Foramtion.Formation" />
+        <activity android:name=".features.LeagueActivity.LeagueActivity" />
+        <activity android:name="com.mahmoudmabrok.hadibadi.features.Foramtion.Formation" />
     </application>
 
 </manifest>

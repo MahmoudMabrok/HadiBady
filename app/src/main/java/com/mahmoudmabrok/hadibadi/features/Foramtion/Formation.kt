@@ -1,4 +1,4 @@
-package com.mahmoudmabrok.hadibadi.Foramtion
+package com.mahmoudmabrok.hadibadi.features.Foramtion
 
 import android.app.ProgressDialog
 import android.os.Bundle
@@ -6,9 +6,9 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.mahmoudmabrok.hadibadi.Datalayer.DataRepo
-import com.mahmoudmabrok.hadibadi.Foramtion.Adapter.MatchGame
-import com.mahmoudmabrok.hadibadi.Foramtion.Adapter.matchAdapter
-import com.mahmoudmabrok.hadibadi.LeagueActivity.LeagueActivity
+import com.mahmoudmabrok.hadibadi.features.Foramtion.Adapter.MatchGame
+import com.mahmoudmabrok.hadibadi.features.Foramtion.Adapter.matchAdapter
+import com.mahmoudmabrok.hadibadi.features.LeagueActivity.LeagueActivity
 import com.mahmoudmabrok.hadibadi.R
 import com.mahmoudmabrok.hadibadi.util.Operation
 import kotlinx.android.synthetic.main.activity_formation.*
