@@ -1,4 +1,4 @@
-package com.mahmoudmabrok.hadibadi.Foramtion.Adapter;
+package com.mahmoudmabrok.hadibadi.features.Foramtion.Adapter;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;

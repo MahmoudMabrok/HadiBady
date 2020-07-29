@@ -2,7 +2,7 @@ package com.mahmoudmabrok.hadibadi.Datalayer;
 
 import android.content.Context;
 
-import com.mahmoudmabrok.hadibadi.Datalayer.Local.Sharedmanager;
+import com.mahmoudmabrok.hadibadi.Datalayer.Local.SharedManager;
 
 import java.util.List;
 
@@ -11,18 +11,18 @@ import java.util.List;
  */
 public class DataRepo {
 
-    private Sharedmanager sharedmanager;
+    private SharedManager sharedmanager;
 
     public DataRepo(Context context) {
-        sharedmanager = new Sharedmanager(context);
+        sharedmanager = new SharedManager(context);
     }
 
 
-    public void setTeams(List<String> teams) {
-        sharedmanager.setTeams(teams);
+    public void setTeams(List<String> teams, String name) {
+        sharedmanager.setTeams(teams, name);
     }
 
-    public List<String> getTeamList() {
-        return sharedmanager.getTeamList();
+    public List<String> getTeamList(String name) {
+        return sharedmanager.getTeamList(name);
     }
 }

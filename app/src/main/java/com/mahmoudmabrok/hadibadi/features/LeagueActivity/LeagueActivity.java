@@ -1,4 +1,4 @@
-package com.mahmoudmabrok.hadibadi.LeagueActivity;
+package com.mahmoudmabrok.hadibadi.features.LeagueActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,16 +12,16 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.mahmoudmabrok.hadibadi.Datalayer.DataRepo;
-import com.mahmoudmabrok.hadibadi.Foramtion.Formation;
-import com.mahmoudmabrok.hadibadi.Hady.Adapter.CustomAdapter;
+import com.mahmoudmabrok.hadibadi.features.Foramtion.Formation;
+import com.mahmoudmabrok.hadibadi.features.hady.adapter.CustomAdapter;
 import com.mahmoudmabrok.hadibadi.R;
-import com.mahmoudmabrok.hadibadi.Util.Operation;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class LeagueActivity extends AppCompatActivity {
 
+    // I was so newbi
     public static List<String> listPlayer;
     private RecyclerView recyclerView;
     private CustomAdapter adapter;
@@ -84,7 +84,6 @@ public class LeagueActivity extends AppCompatActivity {
     }
 
     public void add(View view) {
-        Operation.hideInputKeyboard(this);
         String s = edPlayer.getText().toString();
         if (!TextUtils.isEmpty(s)) {
             listPlayer.add(s);

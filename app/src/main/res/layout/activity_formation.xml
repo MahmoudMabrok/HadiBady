@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".Foramtion.Formation">
+    tools:context=".features.Foramtion.Formation">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMatch"

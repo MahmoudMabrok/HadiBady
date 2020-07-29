@@ -1,4 +1,4 @@
-package com.mahmoudmabrok.hadibadi.Util;
+package com.mahmoudmabrok.hadibadi.util;
 
 import android.app.AlertDialog;
 import android.content.Context;

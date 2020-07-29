@@ -1,4 +1,4 @@
-package com.mahmoudmabrok.hadibadi.Foramtion.Adapter;
+package com.mahmoudmabrok.hadibadi.features.Foramtion.Adapter;
 
 /**
  * Created by Mahmoud on 9/11/2018.
